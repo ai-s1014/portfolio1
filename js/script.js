@@ -16,17 +16,16 @@
 
 var mySwiper = new Swiper('.slider2', {
 	loop: true,
-	loopAdditionalSlides: 1,
-	slidesPerView: 'auto',
+	slidesPerView: 3,
+	spaceBetween: 30,
+	speed: 1000,
 	autoplay: {
-	  delay: 5000,
-	  disableOnInteraction: false,
-	  waitForTransition: false,
-	},
-	speed: 4000,
-	allowTouchMove: false,
+		delay: 6000,
+		disableOnInteraction: false,
+		waitForTransition: false,
+	  },
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
-	  },
+	},
 });
