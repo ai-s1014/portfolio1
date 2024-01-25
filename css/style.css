@@ -55,7 +55,7 @@ a {
     padding: 60px 0;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .section__inner {
         width: 80%;
     }
@@ -90,7 +90,7 @@ a {
     display: flex;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .s__flex {
         flex-wrap:wrap;
         flex-direction: column;
@@ -126,7 +126,7 @@ a {
     z-index: 100;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .header {
         display: none;
     }
@@ -222,7 +222,7 @@ a {
     position: relative;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .info__flex {
         flex-wrap:wrap;
         flex-direction: column;
@@ -242,7 +242,7 @@ a {
     transform: translateY(-50%);
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .info__flex::after {
         display: none;
     }
@@ -259,7 +259,7 @@ a {
     border-right: 1px solid #666464;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .info__date::after {
         display: none;
     }
@@ -278,7 +278,7 @@ a {
     width: 50%;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .about__flex-l {
         width: 100%;
     }
@@ -303,7 +303,7 @@ a {
     margin-left: 50px;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .about__flex-r {
         width: 100%;
         margin-left: 0;
@@ -327,7 +327,7 @@ a {
     width: 50%;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .intr__flex-l {
         width: 100%;
     }
@@ -366,7 +366,7 @@ a {
     height: 430px;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .doctor__image img{
         width: 100%;
         height: 100%;
@@ -378,7 +378,7 @@ a {
     margin-left: 50px;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .intr__flex-r {
         width: 100%;
         margin-left: 0;
@@ -425,11 +425,12 @@ a {
     width: 50%;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .guide__flex-l {
         width: 100%
     }
 }
+
 
 .medical-hours {
     width: 100%;
@@ -469,7 +470,7 @@ a {
     margin-left: 50px;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .guide__flex-r {
         width: 100%;
         margin-left: 0;
@@ -482,10 +483,11 @@ a {
     letter-spacing: 1px;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .guide__text {
         flex-wrap:wrap;
         flex-direction: column;
+        display: block;
     }
 }
 
@@ -524,7 +526,7 @@ a {
     width: 50%;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .appointment__flex-l {
         width: 100%;
     }
@@ -546,7 +548,7 @@ a {
     margin-top: 30px;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .appointment__flex-r {
         width: 100%;
     }
@@ -554,6 +556,14 @@ a {
 
 .reception-time__flex {
     display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .reception-time__flex {
+        flex-wrap:wrap;
+        flex-direction: column;
+        display: block;
+    }
 }
 
 .time__title {
@@ -588,6 +598,14 @@ a {
     font-size: 13px;
 }
 
+@media screen and (max-width: 768px) {
+    .detail__flex {
+        flex-wrap:wrap;
+        flex-direction: column;
+    }
+}
+
+
 .clinic-name {
 
 }
@@ -598,6 +616,12 @@ a {
 
 .post-code {
 
+}
+
+@media screen and (max-width: 768px) {
+    .post-code {
+        margin-top: 15px;
+    }
 }
 
 .address {
