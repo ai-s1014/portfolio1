@@ -16,7 +16,7 @@
 
 var mySwiper = new Swiper('.slider2', {
 	loop: true,
-	slidesPerView: 3,
+	slidesPerView: 34,
 	spaceBetween: 30,
 	speed: 1000,
 	autoplay: {
