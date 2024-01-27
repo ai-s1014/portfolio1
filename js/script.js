@@ -16,7 +16,13 @@
 
 var mySwiper = new Swiper('.slider2', {
 	loop: true,
-	slidesPerView: 34,
+	slidesPerView: 1.5,
+	centeredSlides: true,
+	breakpoints: {
+		768: {
+			slidesPerView: 3,
+		}
+	},
 	spaceBetween: 30,
 	speed: 1000,
 	autoplay: {
@@ -29,3 +35,13 @@ var mySwiper = new Swiper('.slider2', {
 		prevEl: '.swiper-button-prev',
 	},
 });
+
+// drawer menu
+jQuery('.drawer__icon').on('click', function(e) {
+	e.preventDefault();
+
+	jQuery('.drawer__icon').toggleClass('is-active');
+	jQuery('.drawer__nav').toggleClass('is-active');
+	jQuery('.drawer__background').toggleClass('is-active');
+	return false;
+  });
