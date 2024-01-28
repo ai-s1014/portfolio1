@@ -36,12 +36,39 @@ var mySwiper = new Swiper('.slider2', {
 	},
 });
 
-// drawer menu
-jQuery('.drawer__icon').on('click', function(e) {
+$('.drawer__icon').on('click', function(e) {
 	e.preventDefault();
 
-	jQuery('.drawer__icon').toggleClass('is-active');
-	jQuery('.drawer__nav').toggleClass('is-active');
-	jQuery('.drawer__background').toggleClass('is-active');
+	$('.drawer__icon').toggleClass('is-active');
+	$('.drawer__nav').toggleClass('is-active');
+	$('.drawer__background').toggleClass('is-active');
 	return false;
   });
+
+// ページ内リンク スムーススクロール
+$(function(){
+	$('a[href^="#"]').click(function(){
+	  var speed = 500;
+	  var href= $(this).attr("href");
+	  var target = $(href == "#" || href == "" ? 'html' : href);
+	  var position = target.offset().top;
+	  $("html, body").animate({scrollTop:position}, speed, "swing");
+	  return false;
+	});
+  });
+
+// page top
+$('.page-top').click(function () {
+    $('body,html').animate({
+        scrollTop: 0//ページトップまでスクロール
+    }, 500);//ページトップスクロールの速さ。数字が大きいほど遅くなる
+    return false;//リンク自体の無効化
+});
+
+$(window).on('load scroll', function(){
+if($(this).scrollTop() > 150) {
+	$('.page-top').addClass('show');
+}else{
+	$('.page-top').removeClass('show');
+}
+});
