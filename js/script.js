@@ -36,6 +36,7 @@ var mySwiper = new Swiper('.slider2', {
 	},
 });
 
+// ハンバーガーメニュー
 $('.drawer__icon').on('click', function(e) {
 	e.preventDefault();
 
@@ -44,6 +45,8 @@ $('.drawer__icon').on('click', function(e) {
 	$('.drawer__background').toggleClass('is-active');
 	return false;
   });
+
+
 
 // ページ内リンク スムーススクロール
 $(function(){

@@ -179,7 +179,7 @@ a {
     top: 0;
     left: 0;
     z-index: 400;
-    transition: all 0.4s ease;
+    transition: all 0.5s ease;
     display: none;
 }
 
@@ -218,7 +218,7 @@ a {
 
 .drawer__icon.is-active .drawer__icon-bar1 {
     transform: rotate(45deg);
-    transition: all 0.8s ease;
+    transition: all 0.5s ease;
     top: 30px;
 }
 
@@ -236,7 +236,7 @@ a {
 
 .drawer__icon.is-active .drawer__icon-bar3 {
     transform: rotate(-45deg);
-    transition: all 0.8s ease;
+    transition: all 0.7s ease;
     top: 30px;
 }
 
@@ -249,7 +249,7 @@ a {
     background-color: #fff;
     z-index: 300;
     transform: translateX(-103%);
-    transition: 0.3s ease-in-out;
+    transition: all 0.7s ease;
 }
 
 .drawer__nav.is-active {
@@ -265,45 +265,45 @@ a {
     line-height: 2em;
     font-weight: 700;
     background-color: #fff;
-    background-clip: padding-box;
-    border-bottom: 1px solid rgba(83, 79, 79, 0.6);
-
-    /* 順番に表示 */
+    border-bottom: 1px dotted rgba(83, 79, 79, 0.6);
     transform: translateX(-103%);
-    animation: list-animation 1s forwards;
+    animation: list-animation 0.5s forwards;
 }
+
+
 
 /* drawer__list 順番に表示 */
 .drawer__list:nth-child(1) {
-    animation-delay: 1s
+    animation-delay: 0.5s;
 }
 
 .drawer__list:nth-child(2) {
-    animation-delay: 1.1s
+    animation-delay: 0.6s;
 }
 
 .drawer__list:nth-child(3) {
-    animation-delay: 1.2s
+    animation-delay: 0.7s;
 }
 
 .drawer__list:nth-child(4) {
-    animation-delay: 1.3s
+    animation-delay: 0.8s;
 }
 
 .drawer__list:nth-child(5) {
-    animation-delay: 1.4s
+    animation-delay: 0.9s;
 }
 
 .drawer__list:nth-child(6) {
-    animation-delay: 1.5s
+    animation-delay: 1s;
 }
 
 @keyframes list-animation {
     0% {
-    transform: translateX(-103%);
+        transform: translateX(-103%);
     }
 
     100% {
+
         transform: translateX(0);
     }
 }
