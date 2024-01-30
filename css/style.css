@@ -236,7 +236,7 @@ a {
 
 .drawer__icon.is-active .drawer__icon-bar3 {
     transform: rotate(-45deg);
-    transition: all 0.7s ease;
+    transition: all 0.5s ease;
     top: 30px;
 }
 
@@ -249,7 +249,7 @@ a {
     background-color: #fff;
     z-index: 300;
     transform: translateX(-103%);
-    transition: all 0.7s ease;
+    transition: all 0.5s ease;
 }
 
 .drawer__nav.is-active {
@@ -266,46 +266,7 @@ a {
     font-weight: 700;
     background-color: #fff;
     border-bottom: 1px dotted rgba(83, 79, 79, 0.6);
-    transform: translateX(-103%);
-    animation: list-animation 0.5s forwards;
-}
-
-
-
-/* drawer__list 順番に表示 */
-.drawer__list:nth-child(1) {
-    animation-delay: 0.5s;
-}
-
-.drawer__list:nth-child(2) {
-    animation-delay: 0.6s;
-}
-
-.drawer__list:nth-child(3) {
-    animation-delay: 0.7s;
-}
-
-.drawer__list:nth-child(4) {
-    animation-delay: 0.8s;
-}
-
-.drawer__list:nth-child(5) {
-    animation-delay: 0.9s;
-}
-
-.drawer__list:nth-child(6) {
-    animation-delay: 1s;
-}
-
-@keyframes list-animation {
-    0% {
-        transform: translateX(-103%);
-    }
-
-    100% {
-
-        transform: translateX(0);
-    }
+    opacity: 0;
 }
 
 .drawer__background {
@@ -316,12 +277,12 @@ a {
     height: 100%;
     background-color: #fff;
     z-index: 298;
-    display: none;
+    transform: translateX(-103%);
     transition: all 0.5s ease;
 }
 
 .drawer__background.is-active {
-    display: block;
+    transform: translateX(0);
 }
 
 .sp__logo {

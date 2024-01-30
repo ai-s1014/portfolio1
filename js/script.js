@@ -43,9 +43,20 @@ $('.drawer__icon').on('click', function(e) {
 	$('.drawer__icon').toggleClass('is-active');
 	$('.drawer__nav').toggleClass('is-active');
 	$('.drawer__background').toggleClass('is-active');
-	return false;
-  });
+});
 
+function fadeIn() {
+	var delaySpeed = 700;
+	var fadeSpeed = 700;
+
+	$('.drawer__list').each(function(i) {
+	  $(this).delay(i*(delaySpeed)).animate({
+		'opacity' : '1',
+	  },fadeSpeed);
+	});
+  }
+
+  $('.drawer__icon').on('click', fadeIn);
 
 
 // ページ内リンク スムーススクロール
