@@ -12,7 +12,7 @@ body {
 
 body {
     font-family: "futura-pt", "futura-pt-bold", 'Helvetica Neue','Arial','游ゴシック', 'YuGothic', 'ヒラギノ角ゴ ProN W3', "Hiragino Kaku Gothic ProN", "メイリオ", 'Meiryo', 'Osaka', 'MS Pゴシック', 'MS PGothic', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     font-size: 12px;
     line-height: 26px;
@@ -169,16 +169,19 @@ a {
 
 .title-en {
     display: block;
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 700;
 }
 
 /* header レスポンシブ */
 .drawer__icon {
+    width: 60px;
+    height: 60px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 400;
+    background-color: #fff;
     transition: all 0.5s ease;
     display: none;
 }
@@ -189,14 +192,10 @@ a {
     }
 }
 
-.drawer__icon.is-active {
+.drawer__icon.open {
     transform: translateX(220px);
 }
-
 .drawer__icon-bars {
-    width: 60px;
-    height: 60px;
-    background-color: #fff;
     position: relative;
     display: block;
 }
@@ -206,7 +205,7 @@ a {
 .drawer__icon-bar3 {
     position: absolute;
     width: 30px;
-    height: 1px;
+    height: 2px;
     background-color: #3c2617;
     top: 0;
     left: 25%;
@@ -216,7 +215,7 @@ a {
     top: 22px;
 }
 
-.drawer__icon.is-active .drawer__icon-bar1 {
+.drawer__icon.open .drawer__icon-bar1 {
     transform: rotate(45deg);
     transition: all 0.5s ease;
     top: 30px;
@@ -226,7 +225,7 @@ a {
     top: 30px;
 }
 
-.drawer__icon.is-active .drawer__icon-bar2 {
+.drawer__icon.open .drawer__icon-bar2 {
     display: none;
 }
 
@@ -234,7 +233,7 @@ a {
     top: 38px;
 }
 
-.drawer__icon.is-active .drawer__icon-bar3 {
+.drawer__icon.open .drawer__icon-bar3 {
     transform: rotate(-45deg);
     transition: all 0.5s ease;
     top: 30px;
@@ -248,12 +247,20 @@ a {
     left: 0;
     background-color: #fff;
     z-index: 300;
-    transform: translateX(-103%);
     transition: all 0.5s ease;
 }
 
-.drawer__nav.is-active {
+/* drawer__nav 開閉 */
+.hide {
+    transform: translateX(-103%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show {
     transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
 }
 
 .drawer__menu {
@@ -264,26 +271,19 @@ a {
     padding: 15px 40px;
     line-height: 2em;
     font-weight: 700;
+    color: #666464;
     background-color: #fff;
     border-bottom: 1px dotted rgba(83, 79, 79, 0.6);
     opacity: 0;
 }
 
 .drawer__background {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 220px;
     height: 100%;
     background-color: #fff;
-    z-index: 298;
-    transform: translateX(-103%);
-    transition: all 0.5s ease;
 }
 
-.drawer__background.is-active {
-    transform: translateX(0);
-}
+
 
 .sp__logo {
     display: none;
@@ -341,6 +341,7 @@ a {
     display: flex;
     padding: 12px 0;
     border-top: 1px solid #3c2617;
+    transition: all 0.3s ease;
     position: relative;
 }
 
@@ -368,6 +369,10 @@ a {
     .info__flex::after {
         display: none;
     }
+}
+
+.info__flex:hover {
+    background-color: rgba(255,255,255,1);
 }
 
 .info__date {
@@ -797,6 +802,8 @@ a {
 
 .map__btn {
     margin-left: 50px;
+    padding: 0;
+    transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 768px) {
@@ -806,8 +813,8 @@ a {
 }
 
 .map__btn a {
-    width: 200px;
-    display: inline-block;
+    width: 224px;
+    display: block;
     padding: 5px 10px;
     font-size: 12px;
     font-weight: 700;
@@ -818,6 +825,12 @@ a {
     background-color: #3c2617;
     position: relative;
 }
+
+.map__btn:hover a {
+    background-color: #543a2b;
+}
+
+
 
 .map__btn a::before {
     position: absolute;
@@ -941,7 +954,8 @@ a {
 }
 
 .footer__inner {
-
+    width: 100%;
+    margin: 0 auto;
 }
 
 .footer__nav {
@@ -950,10 +964,11 @@ a {
 
 .footer__menu {
     display: flex;
+    flex-wrap: wrap;
 }
 
+
 .footer__list a {
-    display: inline-block;
     letter-spacing: 1px;
     transition: all 0.3s ease;
 }
@@ -972,7 +987,7 @@ a {
     display: block;
     margin-top: 30px;
     color: #fff;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 700;
     letter-spacing: 2px;
 }

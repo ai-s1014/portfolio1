@@ -37,27 +37,29 @@ var mySwiper = new Swiper('.slider2', {
 });
 
 // ハンバーガーメニュー
-$('.drawer__icon').on('click', function(e) {
-	e.preventDefault();
+$('.drawer__icon').on('click', function() {
+	$(this).toggleClass('open');
+	$('.drawer__nav').toggleClass('open');
+	$('.drawer__background').toggleClass('open');
+	$('.hide').toggleClass('show');
+	$('.drawer__list').toggleClass('show').animate({
+		'opacity' : '0',
+		'left' : '0px',
+	  }, 0);
 
-	$('.drawer__icon').toggleClass('is-active');
-	$('.drawer__nav').toggleClass('is-active');
-	$('.drawer__background').toggleClass('is-active');
+	function fadeIn() {
+		var delaySpeed = 100; // メニューアイテムの遅延時間
+		var fadeSpeed = 200; // フェードイン速度
+
+		$('.drawer__list').each(function(i) {
+		  $(this).delay(i * delaySpeed).animate({
+			'opacity' : '1',
+			'left' : '0px',
+		  }, fadeSpeed);
+		});
+	};
+	fadeIn()
 });
-
-function fadeIn() {
-	var delaySpeed = 700;
-	var fadeSpeed = 700;
-
-	$('.drawer__list').each(function(i) {
-	  $(this).delay(i*(delaySpeed)).animate({
-		'opacity' : '1',
-	  },fadeSpeed);
-	});
-  }
-
-  $('.drawer__icon').on('click', fadeIn);
-
 
 // ページ内リンク スムーススクロール
 $(function(){
