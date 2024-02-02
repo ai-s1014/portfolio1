@@ -45,6 +45,7 @@ $('.drawer__icon').on('click', function() {
 	$('.drawer__list').toggleClass('show').animate({
 		'opacity' : '0',
 		'left' : '0px',
+		'background-color': 'rgba(255, 255, 255, 1)'
 	  }, 0);
 
 	function fadeIn() {
