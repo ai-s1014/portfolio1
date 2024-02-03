@@ -87,6 +87,7 @@ a {
 .s__title-en {
     display: block;
     margin-top: 12px;
+    font-weight: 700;
     letter-spacing: 1px;
 }
 
@@ -111,9 +112,10 @@ a {
 
 .t-square {
     display: inline-block;
-    padding: 1px 12px;
+    padding: 3px 12px 1px;
     font-size: 13px;
     text-align: center;
+    font-weight: 700;
     letter-spacing: 2px;
     border-radius: 3px;
     color: #fff;
@@ -338,7 +340,7 @@ a {
 /* 全体のスタイル */
 .slider1 {
 	width: 100%;
-    height: 736px;
+    height: 100vh;
     overflow: hidden;
 }
 .swiper-slide-active .slide-image,
@@ -670,7 +672,7 @@ a {
 
 .closed-day {
     margin-left: 30px;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 700;
 }
 
@@ -689,7 +691,7 @@ a {
 
 .department__list {
     margin-left: 30px;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 700;
 }
 
@@ -791,7 +793,6 @@ a {
     display: flex;
     justify-content: space-between;
     letter-spacing: 2px;
-    font-weight: 700;
     font-size: 13px;
 }
 
@@ -804,7 +805,7 @@ a {
 
 
 .clinic-name {
-
+    font-weight: 700;
 }
 
 .address__text {
@@ -889,7 +890,7 @@ a {
 
 .access__map {
     max-width: 100%;
-    height: 100%;
+    height: 350px;
 }
 
 .iframe__map {
@@ -991,7 +992,7 @@ a {
 
 /* footer */
 .footer {
-    padding: 120px 60px;
+    padding: 120px 60px 60px;
     background-color: #3c2617;
 }
 
