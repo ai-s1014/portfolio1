@@ -397,7 +397,8 @@ a {
 .info__flex::after {
     position: absolute;
     content: "";
-    background-image: url(/images/arrow-r.png);
+
+    background-image: url(../images/arrow-r.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 10px;
