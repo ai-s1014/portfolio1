@@ -1,3 +1,4 @@
+
 // hero swiper
   var mySwiper = new Swiper('.slider1', {
 	effect: 'fade',
@@ -14,12 +15,13 @@
 	allowTouchMove: false,
 });
 
+//photo-gallery swiper
 var mySwiper = new Swiper('.slider2', {
 	loop: true,
 	slidesPerView: 1.5,
 	centeredSlides: true,
 	breakpoints: {
-		768: {
+		769: {
 			slidesPerView: 3,
 		}
 	},
@@ -42,24 +44,7 @@ $('.drawer__icon').on('click', function() {
 	$('.drawer__nav').toggleClass('open');
 	$('.drawer__background').toggleClass('open');
 	$('.hide').toggleClass('show');
-	$('.drawer__list').toggleClass('show').animate({
-		'opacity' : '0',
-		'left' : '0px',
-		'background-color': 'rgba(255, 255, 255, 1)'
-	  }, 0);
-
-	function fadeIn() {
-		var delaySpeed = 100; // メニューアイテムの遅延時間
-		var fadeSpeed = 200; // フェードイン速度
-
-		$('.drawer__list').each(function(i) {
-		  $(this).delay(i * delaySpeed).animate({
-			'opacity' : '1',
-			'left' : '0px',
-		  }, fadeSpeed);
-		});
-	};
-	fadeIn()
+	$('.drawer__list').toggleClass('show');
 });
 
 // ページ内リンク スムーススクロール
