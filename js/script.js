@@ -44,7 +44,7 @@ $('.drawer__icon').on('click', function() {
 	$('.drawer__nav').toggleClass('open');
 	$('.drawer__background').toggleClass('open');
 	$('.hide').toggleClass('show');
-	$('.drawer__list').toggleClass('show');
+	$('.drawer__menu').toggleClass('show');
 });
 
 // ページ内リンク スムーススクロール
