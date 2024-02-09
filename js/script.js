@@ -6,7 +6,7 @@
         crossFade: true,
     },
 	autoplay: {
-	  delay: 6000,
+	  delay: 7000,
 	  disableOnInteraction: false,
 	  waitForTransition: false,
 	},
@@ -18,14 +18,14 @@
 //photo-gallery swiper
 var mySwiper = new Swiper('.slider2', {
 	loop: true,
-	slidesPerView: 1.5,
 	centeredSlides: true,
+	slidesPerView: 1,
 	breakpoints: {
-		769: {
+		741: {
 			slidesPerView: 3,
 		}
 	},
-	spaceBetween: 30,
+	spaceBetween: 60,
 	speed: 1000,
 	autoplay: {
 		delay: 6000,
