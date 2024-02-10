@@ -1,28 +1,25 @@
 
 // hero swiper
-  var mySwiper = new Swiper('.slider1', {
+var mySwiper = new Swiper('.slider1', {
 	effect: 'fade',
-	fadeEffect: {
-        crossFade: true,
+	speed: 2500,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        waitForTransition: false,
     },
-	autoplay: {
-	  delay: 7000,
-	  disableOnInteraction: false,
-	  waitForTransition: false,
-	},
-	speed: 0,
-	loopAdditionalSlides: 5,
-	allowTouchMove: false,
+    loopAdditionalSlides: 5,
+    allowTouchMove: false,
 });
 
 //photo-gallery swiper
 var mySwiper = new Swiper('.slider2', {
 	loop: true,
-	centeredSlides: true,
 	slidesPerView: 1,
 	breakpoints: {
 		741: {
 			slidesPerView: 3,
+			centeredSlides: true,
 		}
 	},
 	spaceBetween: 60,
@@ -42,9 +39,9 @@ var mySwiper = new Swiper('.slider2', {
 $('.drawer__icon').on('click', function() {
 	$(this).toggleClass('open');
 	$('.drawer__nav').toggleClass('open');
+	$('.drawer__list').toggleClass('open');
 	$('.drawer__background').toggleClass('open');
-	$('.hide').toggleClass('show');
-	$('.drawer__menu').toggleClass('show');
+	$('.hide').toggleClass('open');
 });
 
 // ページ内リンク スムーススクロール
