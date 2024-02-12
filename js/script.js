@@ -8,20 +8,25 @@ var mySwiper = new Swiper('.slider1', {
         disableOnInteraction: false,
         waitForTransition: false,
     },
-    loopAdditionalSlides: 5,
+	loop: true,
     allowTouchMove: false,
 });
 
 //photo-gallery swiper
 var mySwiper = new Swiper('.slider2', {
 	loop: true,
-	slidesPerView: 1,
 	breakpoints: {
+		0: {
+			slidesPerView: 1,
+		},
 		741: {
-			slidesPerView: 3,
-			centeredSlides: true,
-		}
+			slidesPerView: 2.5,
+		},
+		1080: {
+			slidesPerView: 4.5,
+		},
 	},
+	centeredSlides: true,
 	spaceBetween: 60,
 	speed: 1000,
 	autoplay: {
