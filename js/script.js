@@ -2,7 +2,7 @@
 // hero swiper
 var mySwiper = new Swiper('.slider1', {
 	effect: 'fade',
-	speed: 2500,
+	speed: 3000,
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
@@ -18,15 +18,21 @@ var mySwiper = new Swiper('.slider2', {
 	breakpoints: {
 		0: {
 			slidesPerView: 1,
+			centeredSlides: true,
+		},
+		450: {
+			slidesPerView: 2.5,
+			centeredSlides: true,
 		},
 		741: {
-			slidesPerView: 2.5,
+			slidesPerView: 3.5,
+			centeredSlides: true,
 		},
 		1080: {
-			slidesPerView: 4.5,
+			slidesPerView: 4,
+			centeredSlides: true,
 		},
 	},
-	centeredSlides: true,
 	spaceBetween: 60,
 	speed: 1000,
 	autoplay: {
