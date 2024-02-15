@@ -621,21 +621,19 @@ a {
 }
 
 .career {
+    width: 100%;
     margin-top: 30px;
 }
 
-.career__flex {
-    display: flex;
-}
-
-.career__date {
-    width: 10%;
+.career dt {
+    float: left;
+    width: 9%;
     text-align: right;
 }
 
-.career__history {
-    width: 90%;
-    margin-left: 28px;
+.career dd {
+    margin-left: 0;
+    padding-left: 15%;
 }
 
 .license {
