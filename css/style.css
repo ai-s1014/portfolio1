@@ -128,7 +128,7 @@ a {
 }
 
 .square90 {
-    width: 90px;
+    width: 114px;
 }
 
 .square129 {
@@ -151,6 +151,13 @@ a {
     width: 166px;
     height: 150px;
 }
+
+@media screen and (max-width: 740px) {
+    .header__logo {
+        padding: 30px 50px;
+    }
+}
+
 
 .header__logo img {
     width: 100%;
@@ -837,6 +844,12 @@ a {
     margin-top: 15px;
 }
 
+@media screen and (max-width: 740px) {
+    .note {
+        margin-top: 30px;
+    }
+}
+
 /* access */
 
 
@@ -846,7 +859,6 @@ a {
 
 .detail__flex {
     display: flex;
-    justify-content: space-between;
     letter-spacing: 2px;
     font-size: 13px;
 }
@@ -858,38 +870,37 @@ a {
     }
 }
 
-
 .clinic-name {
     font-weight: 700;
 }
 
 .address__text {
-
-}
-
-.post-code {
-
+    margin-left: 87px;
 }
 
 @media screen and (max-width: 740px) {
-    .post-code {
+    .address__text {
+        display: flex;
+        margin-left: 0;
         margin-top: 15px;
+
     }
 }
 
-.address {
+@media screen and (max-width: 740px) {
+    .address {
+        margin-left: 10px;
+    }
+}
 
+.tel__text {
+    margin-left: 87px;
 }
 
 @media screen and (max-width: 740px) {
     .tel__text {
         line-height: 18px;
-    }
-}
-
-@media screen and (max-width: 740px) {
-    .tel-s {
-        margin-top: 15px;
+        margin-left: 0;
     }
 }
 
@@ -995,6 +1006,7 @@ a {
 
 .swiper-slide2 {
     min-width: 450px;
+    width: 100%;
 }
 
 .slide-image2 img {
@@ -1059,7 +1071,7 @@ a {
 
 /* footer */
 .footer {
-    padding: 120px 100px 60px;
+    padding: 120px 30px 60px;
     background-color: #3c2617;
 }
 
