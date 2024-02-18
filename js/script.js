@@ -15,27 +15,11 @@ var mySwiper = new Swiper('.slider1', {
 //photo-gallery swiper
 var mySwiper = new Swiper('.slider2', {
 	loop: true,
-	breakpoints: {
-		0: {
-			slidesPerView: 1,
-			centeredSlides: true,
-		},
-		450: {
-			slidesPerView: 2.5,
-			centeredSlides: true,
-		},
-		741: {
-			slidesPerView: 3.5,
-			centeredSlides: true,
-
-		},
-		1191: {
-			slidesPerView: 4,
-			centeredSlides: true,
-		},
-	},
-	loopAdditionalSlides: 1,
+	slidesPerView: 'auto',
+	centeredSlides: true,
 	spaceBetween: 60,
+	loopAdditionalSlides: 5,
+	centeredSlidesBounds: true,
 	speed: 1000,
 	autoplay: {
 		delay: 6000,

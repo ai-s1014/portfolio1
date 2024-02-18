@@ -996,6 +996,7 @@ a {
 
 /* slider2 */
 .photo-slide {
+    width: 100%;
     cursor: move;
     position: relative;
 }
@@ -1006,12 +1007,15 @@ a {
 }
 
 .swiper-slide2 {
-    min-width: 450px;
-    width: 100%;
+    width: 450px !important;
+    height: 245px;
 }
 
+.swiper-button-prev img,
+.swiper-button-next img,
 .slide-image2 img {
-    width: 100%;
+    width: 450px !important;
+    height: 245px;
 }
 
 @media screen and (max-width: 740px) {
