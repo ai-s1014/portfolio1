@@ -18,7 +18,6 @@ var mySwiper = new Swiper('.slider2', {
 	slidesPerView: 'auto',
 	centeredSlides: true,
 	spaceBetween: 60,
-	loopAdditionalSlides: 5,
 	centeredSlidesBounds: true,
 	speed: 1000,
 	autoplay: {

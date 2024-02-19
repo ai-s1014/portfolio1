@@ -503,10 +503,6 @@ a {
 }
 
 /* about */
-.about {
-
-}
-
 .about__flex-l {
     width: 50%;
 }
@@ -515,10 +511,6 @@ a {
     .about__flex-l {
         width: 100%;
     }
-}
-
-.about__text {
-
 }
 
 .about__caption {
@@ -543,19 +535,7 @@ a {
     }
 }
 
-.s__image {
-
-}
-
 /* introduction */
-.introduction {
-
-}
-
-.intr__flex {
-
-}
-
 .intr__flex-l {
     width: 50%;
 }
@@ -564,10 +544,6 @@ a {
     .intr__flex-l {
         width: 100%;
     }
-}
-
-.doctor__text {
-
 }
 
 .doctor__cap {
@@ -652,10 +628,6 @@ a {
 }
 
 /* guide */
-.guide {
-
-}
-
 .guide__flex-l {
     width: 50%;
 }
@@ -665,7 +637,6 @@ a {
         width: 100%
     }
 }
-
 
 .medical-hours {
     width: 100%;
@@ -726,13 +697,6 @@ a {
     }
 }
 
-.closed {
-}
-
-.closed__title {
-
-}
-
 .closed-day {
     margin-left: 30px;
     font-size: 13px;
@@ -749,9 +713,6 @@ a {
     margin-top: 50px;
 }
 
-.department__title {
-}
-
 .department__list {
     margin-left: 30px;
     font-size: 13px;
@@ -764,12 +725,7 @@ a {
     }
 }
 
-
 /* appointment */
-.appointment {
-
-}
-
 .appointment__flex-l {
     width: 50%;
 }
@@ -779,7 +735,6 @@ a {
         width: 100%;
     }
 }
-
 
 .appointment__cap {
     font-size: 13px;
@@ -822,10 +777,6 @@ a {
     }
 }
 
-.time__title {
-
-}
-
 .reception-time {
     margin-left: 30px;
     font-size: 15px;
@@ -851,8 +802,6 @@ a {
 }
 
 /* access */
-
-
 .access__flex-l {
     width: calc(100% - 222px)
 }
@@ -902,13 +851,6 @@ a {
         line-height: 18px;
         margin-left: 0;
     }
-}
-
-.fax {
-
-}
-
-.access__flex-r {
 }
 
 .map__btn {
@@ -1007,14 +949,13 @@ a {
 }
 
 .swiper-slide2 {
-    width: 450px !important;
+    width: 450px;
     height: 245px;
 }
 
-.swiper-button-prev img,
-.swiper-button-next img,
+.swiper
 .slide-image2 img {
-    width: 450px !important;
+    width: 450px;
     height: 245px;
 }
 
@@ -1024,7 +965,6 @@ a {
         object-fit: cover;
     }
 }
-
 
 .slider2 .swiper-btn {
     position: absolute;
@@ -1073,7 +1013,6 @@ a {
     left: 9px;
 }
 
-
 /* footer */
 .footer {
     padding: 120px 30px 60px;
@@ -1094,7 +1033,6 @@ a {
     flex-wrap: wrap;
 }
 
-
 .footer__list a {
     letter-spacing: 1px;
     transition: all 0.3s ease;
@@ -1109,7 +1047,6 @@ a {
 .footer__list:last-child a::after {
     content: none;
 }
-
 
 .footer__list a:hover {
     color: #BAAEA2;
