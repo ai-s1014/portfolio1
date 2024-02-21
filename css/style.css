@@ -1015,11 +1015,12 @@ a {
 
 /* footer */
 .footer {
-    padding: 120px 30px 60px;
+    padding: 120px 0 60px;
     background-color: #3c2617;
 }
 
 .footer__inner {
+    max-width: 980px;
     width: 100%;
     margin: 0 auto;
 }
