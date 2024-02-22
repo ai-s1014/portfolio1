@@ -15,7 +15,12 @@ var mySwiper = new Swiper('.slider1', {
 //photo-gallery swiper
 var mySwiper = new Swiper('.slider2', {
 	loop: true,
-	slidesPerView: 'auto',
+	breakpoints: {
+		450: {
+			slidesPerView: 'auto',
+		}
+	},
+	slidesPerView: 1,
 	centeredSlides: true,
 	spaceBetween: 60,
 	centeredSlidesBounds: true,
