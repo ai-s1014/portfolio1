@@ -349,9 +349,13 @@ a {
     height: 100%;
     top: 0;
     left: 0;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(2px);
     z-index: 300;
     display: none;
+
+    /* スマホ表示用 */
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
 }
 
 .drawer__background.open {
